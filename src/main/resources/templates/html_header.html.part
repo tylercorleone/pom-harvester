@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>pomHarvester - dependencies table</title>
+   <style>
+   body {font-family: Helvetica,sans-serif; color: #222; font-size: 13px;}
+   .label {padding: 0.4em 0.4em 0.3em;}
+   .label .sub-label {font-size: 0.8em;  font-weight: 400;}
+   .node {line-height: 1; margin: 16px; margin-bottom: 24px; border: 1px solid #222; border-radius: 4px; overflow: hidden; background-color: white;}
+   .node > .label {background-color: #FFFF66;; font-size: 1.3em; font-weight: 600;}
+   
+   .node .dependency, .node .depender {border: 0; border-top: 1px solid #222; padding-left: 12px;}
+   
+   .node .dependency {background-color: #fff;}
+   .node .dependency .label {}
+   
+   .node .depender {background-color: #ff2020;}
+   .node .depender .label {background-color: #fff; border-left: 1px solid #222;}
+   
+   .dependers-container, .dependencies-container {border-top: 1px solid #222;}
+   .dependers-container .label, .dependencies-container .label {padding: 0.2em; padding-left: 0.4em;}
+   
+   .dependencies-container {background-color: #f4f4f4;}
+   .dependers-container {background-color: #d8d8d8;}
+   
+   a {color: inherit; text-decoration: none;}
+   a:visited {color: inherit;}
+   
+   .node .dependency a, .node .depender a {cursor: pointer;}
+   </style>
+   
+   <!-- RESET -->
+   <style>
+   html, body, div, span,
+   h1, h2, h3, h4, h5, h6, p, a,
+   table, tbody, tfoot, thead, tr, th, td
+   {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+   }
+   </style>
+ </head>
+ <body>
+
+<!--<div style="background-color:grey;">
+Explanation:<br>
+<strong>groupId:artifactId (dependends on N) (M depend on it):<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class='IDependOn'>com.mycompany:securit</span><-- groupId:ArtifactId is a dependency for com.mycompany<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class='dependsOnMe'>org.springframework.security:spring-security-taglibs</span> <-- groupId:ArtifactId depends on org.springfram...<br />
+</div>-->
+<br />
+<br />
+   <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
+   <!--<script>
+     $(document).ready(function(){
+       $("span.dependsOnMe").hover(function(event){
+		$(this).css('cursor','pointer');
+       });
+       $("span.dependsOnMe").click(function(event){
+		//var id="null__crossdata-server";
+		var id=this.innerHTML;
+		$(document).scrollTop( $("#"+id).offset().top );  
+       });
+     });
+   </script>-->
